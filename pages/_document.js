@@ -4,14 +4,14 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 export default class MyDocument extends Document {
   render() {
-    GT = process.env.GTAG
+    var gta = process.env.GTAG
     return (
       <Html>
         <Head>
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
             async
-            src={`https://www.googletagmanager.com/gtag/js?id=${GT}`}
+            src={`https://www.googletagmanager.com/gtag/js?id=${gta}`}
           />
           <script
             dangerouslySetInnerHTML={{
