@@ -1,3 +1,4 @@
+import Html from 'next/html'
 import Head from 'next/head'
 import Page from '../components/Page'
 
